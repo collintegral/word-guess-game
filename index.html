@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>High Noon</title>
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Rye" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <container>
+    <div class = "row">
+      <div class = "col-md-12 text-center">
+        <img src="./assets/images/highnoonbanner.jpg" alt="High Noon" class="centered">
+      </div>
+    </div>
+    
+    <div class = "row">
+      <div class = "col-md-12 text-center">
+        <h1 class = "rye">High Noon Hangman</h1>
+      </div>
+    </div>
+
+    <div class = "row">
+      <div class = "col-md-12">
+        <div class = "jumbotron">
+          <div class="row">
+            <div class = "col-md-4">
+              <h4 class = "rye text-center" id="wins">Wins: 0</h4>
+            </div>
+            <div class = "col-md-4">
+              <h4 class = "rye text-center" id="strikes">Guesses Left: 0</h4>
+            </div>
+            <div class = "col-md-4">
+              <h4 class="rye text-center" id="losses">Losses: 0</h4>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <h5 class="rye" id="wordspace"></h5>
+            </div>
+          </div>
+            <div class="row">
+              <div class="col-md-12 text-center">
+              <h5 class="rye" id="guesses"></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    <div class = "row">
+      <div class = "col-md-12 text-center">
+          <button type="button" class="btn btn-warning rye" id="restart" onclick="hangman.restartBoard()">Start New Game</button>
+          <button type="button" class="btn btn-warning rye" id="reset" onclick="hangman.resetBoard()">Reset Score</button>
+      </div>
+    </div>
+
+
+  </container>
+
+  <script src="./assets/javascript/game.js"></script>
+</body>

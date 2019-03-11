@@ -1,0 +1,36 @@
+* {
+    max-width: 100%;
+    align-content: center;
+}
+
+body {
+    background-image: url("../images/background.png");
+}
+
+h1 {
+    text-align: center;
+    font-size: 80px;
+    padding: 10px;
+}
+
+.jumbotron {
+    margin: 0px auto;
+    max-width: 60%;
+}
+
+.row {
+    margin-bottom: 10px;
+}
+
+.rye {
+    font-family: 'Rye', cursive;
+}
+
+.half {
+    width: 50%;
+}
+
+#wordspace {
+    letter-spacing: 10px;
+    font-size: 25px;
+}

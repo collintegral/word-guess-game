@@ -1,0 +1,18 @@
+Things the game needs to do
+
+1a. Pick a word at random from a repository of contextually-appropriate words.
+1b. (OPTIONAL) Build an array of already-used words; don't repeat words until all have been used.
+
+2. Build a display that explains the game, shows the hidden word as underscores, and shows wins and losses.
+
+3a. Request and receive a letter input from the user.
+3b. Make sure that input has not already been used. Ignore it if it has.
+
+4. Compare that input to each letter of the hidden word.
+
+5a. If the letter matches one, fill that in on the hidden word.
+5b. If the letter doesn't match, give a strike and place it in the "wrong" category.
+
+6a. If the hidden word is fully revealed, congratulate the user and offer to start over. Add one to the win count.
+6b. If too many strikes are accrued, inform the user of their loss and offer to start over. Add one to the loss count.
+6c. (OPTIONAL) Additionally offer to reset the game at the entry display, clearing wins and losses.
