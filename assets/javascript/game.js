@@ -11,10 +11,6 @@ var hangman = {
     currentword: "",
     hiddenword: "",
     inprogress: false,
-    
-    /*startsound = new Audio("../sounds/highnoon.mp3"),
-    winsound = new Audio("../sounds/winquote.mp3"),
-    losssound = new Audio("../sounds/lossquote.mp3"),*/
 
     possiblewords: ["bandanna", "bronco", "buckaroo", "bushwacker", "campfire", "cattle", "cattledrive",
                     "corral", "cowboy", "cowgirl", "deputy", "desert", "frontier", "gallop", "horse", "horseshoe", 
@@ -111,7 +107,7 @@ var hangman = {
         this.wincount++;
         this.refreshBoard();
         $("#guesses").text("You've Won!");
-        // this.winsound.play();
+        this.winSound();
         this.inprogress = false;
     },
 
@@ -121,7 +117,7 @@ var hangman = {
         this.losscount++;
         this.refreshBoard();
         $("#guesses").text("You've Lost!");
-        // this.losssound.play();
+        this.lossSound();
         this.inprogress = false;
     },
 
@@ -146,7 +142,7 @@ var hangman = {
         this.currentword = "";
         this.hiddenword = "";
 
-        // this.startsound.play();
+        
         this.selectWord();
     },
 
@@ -156,7 +152,24 @@ var hangman = {
         this.losscount = 0;
         this.usedwords = [];
 
+        this.startSound();
         this.restartBoard();
+    },
+
+    startSound: function() {
+        var sound = document.getElementById("sounds");
+        sounds.src = "./assets/sounds/highnoon.mp3";
+        sound.play();
+    },
+    winSound: function() {
+        var sound = document.getElementById("sounds");
+        sounds.src = "./assets/sounds/winquote.mp3";
+        sound.play();
+    },
+    lossSound: function() {
+        var sound = document.getElementById("sounds");
+        sounds.src = "./assets/sounds/lossquote.mp3";
+        sound.play();
     },
 };
 
