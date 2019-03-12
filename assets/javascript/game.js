@@ -152,7 +152,6 @@ var hangman = {
         this.losscount = 0;
         this.usedwords = [];
 
-        this.startSound();
         this.restartBoard();
     },
 
@@ -178,3 +177,5 @@ var hangman = {
 document.onkeypress = function(letter) {
         hangman.takeInput(letter.key);
 };
+
+hangman.startSound();
