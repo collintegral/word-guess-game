@@ -158,17 +158,17 @@ var hangman = {
 
     startSound: function() {
         var sound = document.getElementById("sounds");
-        sounds.src = "./assets/sounds/highnoon.mp3";
+        sounds.src = "assets/sounds/highnoon.mp3";
         sound.play();
     },
     winSound: function() {
         var sound = document.getElementById("sounds");
-        sounds.src = "./assets/sounds/winquote.mp3";
+        sounds.src = "assets/sounds/winquote.mp3";
         sound.play();
     },
     lossSound: function() {
         var sound = document.getElementById("sounds");
-        sounds.src = "./assets/sounds/lossquote.mp3";
+        sounds.src = "assets/sounds/lossquote.mp3";
         sound.play();
     },
 };
