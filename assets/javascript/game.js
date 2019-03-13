@@ -153,6 +153,7 @@ var hangman = {
         this.usedwords = [];
 
         this.restartBoard();
+        hangman.startSound();
     },
 
     startSound: function() {
